@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+#wrapper {
+  height: 100vh;
+  /* width: 100vw; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px;
+}
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.background {
+  transform: translateZ(-40px) scale(3);
+}
+.foreground {
+  transform: translateZ(-10px) scale(3);
+}
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* object-fit: cover; */
+}
