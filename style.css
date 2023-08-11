@@ -64,6 +64,7 @@ section {
   height: 500px;
   background-size: cover;
   background-position: center;
+  color: black;
 }
 .bg1 {
   background-image: url(./sport-1.jpg);
@@ -73,4 +74,14 @@ section {
 }
 .bg3 {
   background-image: url(./sport-3.jpg);
+}
+.description {
+  position: absolute;
+  background-color: white;
+  padding: 0.5rem 0.2rem;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  transform: translateX(-50%) translateY(-40%);
+  font-size: 3.5rem;
 }
